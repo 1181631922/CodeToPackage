@@ -27,6 +27,10 @@ android {
             applicationId "com.fanyafeng.codetopackage.z20111308016"
             manifestPlaceholders = [APP_NAME: "红酒"]
         }
+        z20111308069 {
+            applicationId "com.fanyafeng.codetopackage.z20111308069"
+            manifestPlaceholders = [APP_NAME: "测试"]
+        }
     }
 
 
