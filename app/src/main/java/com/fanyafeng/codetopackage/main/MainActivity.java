@@ -11,7 +11,8 @@ import com.fanyafeng.codetopackage.R;
 import com.fanyafeng.codetopackage.BaseActivity;
 
 //需要搭配Baseactivity，这里默认为Baseactivity,并且默认BaseActivity为包名的根目录
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements MainContract.View {
+    private MainContract.Presenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +21,9 @@ public class MainActivity extends BaseActivity {
         //这里默认使用的是toolbar的左上角标题，如果需要使用的标题为中心的采用下方注释的代码，将此注释掉即可
         title = getString(R.string.title_activity_main);
         isSetNavigationIcon = false;
+        presenter = new MainPresenter(this, this);
         initView();
+        presenter.start();
         initData();
     }
 
@@ -34,4 +37,18 @@ public class MainActivity extends BaseActivity {
 
     }
 
+    @Override
+    public void getMyPackageName() {
+
+    }
+
+    @Override
+    public void getMyPackageInfo() {
+
+    }
+
+    @Override
+    public void setName() {
+
+    }
 }
