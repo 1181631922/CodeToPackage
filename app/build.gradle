@@ -17,6 +17,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors {
+        z20111308011 {
+            applicationId "com.fanyafeng.codetopackage.z20111308011"
+            manifestPlaceholders = [APP_NAME: "求福"]
+        }
+        z20111308016 {
+            applicationId "com.fanyafeng.codetopackage.z20111308016"
+            manifestPlaceholders = [APP_NAME: "红酒"]
+        }
+    }
+
+
 }
 
 dependencies {

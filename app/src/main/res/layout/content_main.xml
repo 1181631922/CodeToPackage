@@ -59,6 +59,24 @@
             android:text="数据操作显示"
             android:textColor="@android:color/black" />
 
+        <TextView
+            android:id="@+id/tvGetName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="数据操作显示"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvGetName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="数据操作显示"
+            android:textColor="@android:color/black" />
+
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
