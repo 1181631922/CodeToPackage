@@ -22,6 +22,8 @@ public class MainActivity extends BaseActivity implements MainContract.View {
     private TextView tvMyPackageInfo;
     private Button btnGetName;
     private TextView tvGetName;
+    private TextView tvGetName1;
+    private TextView tvGetName2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,8 @@ public class MainActivity extends BaseActivity implements MainContract.View {
         btnGetName = (Button) findViewById(R.id.btnGetName);
         btnGetName.setOnClickListener(this);
         tvGetName = (TextView) findViewById(R.id.tvGetName);
+        tvGetName1 = (TextView) findViewById(R.id.tvGetName1);
+        tvGetName2 = (TextView) findViewById(R.id.tvGetName2);
     }
 
     //初始化数据
@@ -67,6 +71,16 @@ public class MainActivity extends BaseActivity implements MainContract.View {
     @Override
     public void setName(String name) {
         tvGetName.setText(name);
+    }
+
+    @Override
+    public void setGitHub(String gitHub) {
+        tvGetName1.setText(gitHub);
+    }
+
+    @Override
+    public void setCSDN(String csdn) {
+        tvGetName2.setText(csdn);
     }
 
     @Override

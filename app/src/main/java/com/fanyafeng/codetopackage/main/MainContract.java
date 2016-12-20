@@ -14,6 +14,10 @@ public interface MainContract {
         void setMyPackageInfo(String packageInfo);
 
         void setName(String name);
+
+        void setGitHub(String gitHub);
+
+        void setCSDN(String csdn);
     }
 
     interface Presenter extends BasePresenter {

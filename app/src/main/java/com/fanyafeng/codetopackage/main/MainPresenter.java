@@ -55,5 +55,9 @@ public class MainPresenter implements MainContract.Presenter {
     @Override
     public void setName() {
         view.setName(context.getString(R.string.app_name));
+        view.setGitHub(myGitHub);
+        view.setCSDN(myCSDN);
     }
+
+
 }
