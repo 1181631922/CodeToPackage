@@ -9,14 +9,18 @@ import com.fanyafeng.codetopackage.BasePresenter;
  */
 public interface MainContract {
     interface View {
-        void getMyPackageName();
+        void setMyPackageName(String packageName);
 
-        void getMyPackageInfo();
+        void setMyPackageInfo(String packageInfo);
 
-        void setName();
+        void setName(String name);
     }
 
     interface Presenter extends BasePresenter {
+        void setMyPackageName();
 
+        void setMyPackageInfo();
+
+        void setName();
     }
 }

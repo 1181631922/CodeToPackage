@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.fanyafeng.codetopackage.main.MainActivity"
     tools:showIn="@layout/activity_main">
@@ -17,6 +13,51 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnMyPackageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取应用包名" />
+
+        <TextView
+            android:id="@+id/tvMyPackageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="这个包的应用包名"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btnMyPackageInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取应用详细信息" />
+
+        <TextView
+            android:id="@+id/tvMyPackageInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="这个包的详细信息"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btnGetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="数据操作" />
+
+        <TextView
+            android:id="@+id/tvGetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="数据操作显示"
+            android:textColor="@android:color/black" />
 
 
     </LinearLayout>
