@@ -15,6 +15,16 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "${variant.productFlavors[0].name}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
         }
     }
 
@@ -30,6 +40,12 @@ android {
         z20111308069 {
             applicationId "com.fanyafeng.codetopackage.z20111308069"
             manifestPlaceholders = [APP_NAME: "测试"]
+        }
+        z20111308086 {
+            manifestPlaceholders = [APP_NAME: "投融贷"]
+        }
+        z20111308061 {
+            manifestPlaceholders = [APP_NAME: "微寺庙"]
         }
     }
 
