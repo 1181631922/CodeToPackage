@@ -4,8 +4,10 @@ import android.content.Context;
 
 import com.fanyafeng.codetopackage.R;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.Properties;
 
 /**
@@ -32,7 +34,8 @@ public class MainPresenter implements MainContract.Presenter {
         try {
             Properties properties = new Properties();
             InputStream inputStream = context.getAssets().open("config.properties");
-            properties.load(inputStream);
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+            properties.load(bufferedReader);
             myPackage = properties.getProperty("mypackage");
             myName = properties.getProperty("myname");
             myGitHub = properties.getProperty("mygithub");
