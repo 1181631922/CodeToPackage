@@ -7,7 +7,9 @@
 gradle打包使用我都写在csdn上了<br>
 * [1.多渠道共存打包（一）](http://blog.csdn.net/qq_23195583/article/details/53781764)<br>
 * [2.多渠道共存打包（二）](http://blog.csdn.net/qq_23195583/article/details/53782019)<br>
-* [3.多渠道共存打包（三）](http://blog.csdn.net/qq_23195583/article/details/53782174)<br>
+* [3.多渠道共存打包（三）](http://blog.csdn.net/qq_23195583/article/details/53782174)
+
+
 ### 3.工程图
 ![目录结构](https://github.com/1181631922/CodeToPackage/blob/master/screenshots/1C495E10-8C0A-4621-9DD8-FCF6F8806F5F.png)<br>
 ![release打包](https://github.com/1181631922/CodeToPackage/blob/master/screenshots/6529D514-7DB5-4075-964A-D3201ABDE177.png)<br>
